@@ -1,0 +1,14 @@
+body {
+  background-color: rgba(210, 105, 30, 0.63);
+  color: bisque;
+}
+
+header {
+  margin: 10px;
+  font-size: larger;
+  background-color: rgba(91, 181, 171, 0.245);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.627);
+  transition: 0.3s;
+  color: rgba(0, 0, 0, 0.812);
+  font-weight: bolder;
+}

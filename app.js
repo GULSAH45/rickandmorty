@@ -16,10 +16,8 @@
             <div class="card-body">
               <h5 class="card-title">${rickAndMortyCharacters.name}</h5>
               <p class="card-text">${rickAndMortyCharacters.species}</p>
-               <p class="card-text">${rickAndMortyCharacters.status}</p> 
-               <p class="card-text">${rickAndMortyCharacters.gender}</p>
-                <p class="card-text">${rickAndMortyCharacters.origin.name}</p>
-                
+              <a href="character-details.html?id=${rickAndMortyCharacters.id}" class="btn btn-secondary d-grid" href="#" role="button">Character Details</a>
+
             </div>
           </div>
         </div>
