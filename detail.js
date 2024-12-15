@@ -13,9 +13,9 @@ const fetchCharacterDetails = async () => {
 
     // Tek bir karakter bilgisi alındığından map yerine doğrudan işleme geçiyoruz.
     const characterCard = `
-        <div class="card">
-          <img src="${data.image}" class="card-img-top" alt="${data.name}" />
-          <div class="card-body">
+        <div class="cardDetails">
+          <img src="${data.image}" class="card-img-top detail-img" alt="${data.name}" />
+          <div class="card-body-details">
             <h5 class="card-title"><strong>${data.name}</strong></h5>
             <p class="card-text"><strong>Species:</strong> ${data.species}</p>
             <p class="card-text"><strong>Status:</strong> ${data.status}</p>

@@ -1,22 +1,56 @@
 body {
   background-color: rgba(210, 105, 30, 0.63);
   color: bisque;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.card-wrapper {
+  width: 220px;
+}
+
+.card {
+  background-color: rgba(91, 181, 171, 0.245);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  width: 100%;
+  margin: 0;
 }
 
 .card:hover {
   transform: scale(1.07);
-  -webkit-transform: scale(1.07);
-  -moz-transform: scale(1.07);
-  -ms-transform: scale(1.07);
-  -o-transform: scale(1.07);
 }
-.card {
-  margin: 10px;
-  size-adjust: auto;
+
+/* Modal içindeki yazılar için yeni stil */
+.modal-body p {
+  color: tomato;
+}
+
+/* Kart container'ı için özel stil */
+
+.modal-header {
+  color: tomato;
   background-color: rgba(91, 181, 171, 0.245);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 100%;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
